@@ -1,14 +1,22 @@
 # RBGs_Datawarehouse
 Scripts for creating a data warehouse for the RBGs done in World of Warcraft, via the data collected from the addon REFlex
-
+Major thanks to those creating the addon; https://github.com/AcidWeb/REFlex !
 
 During downtime waiting in qeues for RBGs, I made some scripts in order to make a data warehouse. My intention was mostly to see at which points during the week I make the most points in RBGs, using BI tools that are free, or practically free. My theory is early evening and mid day weekends. Anyway, I don't have a time-dimension to manage the clock during the day, but I have made a date dimension, spec dimension, etc, to see other relevant stuff. 
 Im pushing it here, in case others find it interesting.
 
-# Curremt state:
+# Current state:
 As it is now, it's in a state of proof of concept. My spec dimension only contains specs for prist and druid, fx. As all data comes in .csv format from REFlex, and I will never manage to maintain more than 1 character at a time, I don't know how REFlex output reacts to people having a holy priest and holy pala, fx. 
 
 Input from others will be appreciated. Alternatively I will add stuff myself, without testing. You have been warned.
+
+# Whats needed, or stuff I don't know yet:
+
+Examples of .csv files, where a player has multiple characters, preferably where names of specs overlap, like 'holy' something.
+Perhaps opinions in my grouping of maps. I hope it makes sense.
+If playing on mulitple characters, is it a single file that comes from REFlex, or one per char? In that case, the truncation needs rethinking.
+Complete dimension for all specs, and a way to handle overlapping names in specs.
+Proper frontend work on the visuals/stats, so it's easy to make different reports.
 
 # HOW-TO:
 
@@ -33,3 +41,7 @@ It most like is. But as i suck at modeling data in PowerBI i took the long way, 
 Indeed. As stated above, I suck at the front end part, and untill I can pull favors in a few months time, things will stay mostly the same, unless someone assists on that part. 
 
 That was a hint.
+
+# Your stats are shit.
+
+I know, but being healer was emergency situations, and balance was pure peer pressure.
